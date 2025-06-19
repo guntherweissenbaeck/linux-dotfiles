@@ -1,0 +1,30 @@
+# ----------------------------------------------
+# release-date: 2025-03-30
+# ----------------------------------------------
+
+# ----------------------------------------------
+# Paths and Variables
+# ----------------------------------------------
+export ORACLE_BASE="/u01/app/oracle"
+export ORACLE_HOME="/u01/app/oracle/product/19/dbhome_1"
+export LD_LIBRARY_PATH=/usr/lib:$ORACLE_HOME/lib
+export PATH=$PATH:"/u01/app/oracle/product/19/dbhome_1/bin"
+export PATH=$PATH:$ORACLE_HOME/jdk/bin
+export ORACLE_SID="CDBTEST"
+export CV_ASSUME_DISTID=OEL7.6
+export SQLPATH=$HOME/.sqlcl
+
+# ----------------------------------------------
+# Aliase
+# ----------------------------------------------
+alias adrci="rlwrap adrci"
+alias eos="echo $ORACLE_SID"
+alias orabase="cd $ORACLE_BASE"
+alias oradb="cd /u02/oradb"
+alias orahome="cd $ORACLE_HOME"
+alias oralog="cd /u02/oralog"
+alias pmon="ps -ef | (head -n 1; grep -v grep | grep pmon)"
+alias r="rlwrap rman target /"
+alias s="sql / as sysdba"
+alias sqlp="rlwrap sqlplus / as sysdba"
+

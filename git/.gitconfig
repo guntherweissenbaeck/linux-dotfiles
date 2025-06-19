@@ -1,0 +1,14 @@
+[http]
+	sslVerify = false
+[user]
+	email = gunther.weissenbaeck@stadtwerke-jena.de
+	name = Gunther Weissenbaeck
+[init]
+	defaultBranch = main
+[safe]
+	directory = /ansible/linux
+	directory = /ansible/ara
+	directory = /ansible/cds
+	directory = /srv/ara
+[alias]
+	lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit

@@ -1,0 +1,58 @@
+# ----------------------------------------------------------------------------
+# CLI SHORTENERS
+# ----------------------------------------------------------------------------
+alias .="source"
+alias alix='cd ~/Documents/ansible/linux && source .venv/bin/activate'
+alias dok='cd ~/Documents'
+alias dow='cd ~/Downloads'
+alias e="exit"
+alias erase='shred -uvf'
+alias f='find . -name '
+alias fd='fdfind'
+alias fg='find | grep -i'
+alias lsd="ls -lah --group-directories-first"
+alias proc='ps aux | grep '
+alias rb="reboot"
+alias sd="poweroff"
+alias ssha="eval `ssh-agent`"
+alias t="tmux -2"
+alias tldr='tldr -p linux'
+alias v="/home/gwe/.bin/nvim"
+alias vim="/home/gwe/.bin/nvim"
+alias bat="batcat"
+
+# trash aliases
+alias tre='trash-empty'
+alias trl='trash-list'
+alias trp='trash-put'
+alias trr='trash-rm'
+alias trs='trash-restore'
+alias tt='trash'
+
+alias jena='clear & curl https://wttr.in/jena'
+
+# python
+alias pipup='pip install pip --upgrade'
+alias pipi='pip install'
+alias pv='python3 -m venv .venv'
+alias sv='source .venv/bin/activate'
+
+# Wiki
+alias wiki='vim ~/Documents/vimwiki/index.md'
+
+# SQLCL
+alias s='sql'
+alias sl='sql /nolog'
+alias sn='sql -name'
+
+# Git (additionals)
+alias gpb='git push -u backup --all'
+
+# FZF
+alias fc='cat $(fzf --style full -m --preview="batcat --color=always {}")'
+alias fe='nvim $(fzf --style full -m --preview="batcat --color=always {}")'
+alias ff='fzf --style full --preview="batcat --color=always {}"'
+alias fzf="fzf --style full --preview 'fzf-preview.sh {}' --bind 'focus:transform-header:file --brief {}'"
+
+# Ansible Test
+alias ab175="ansible-playbook -i inventories/devel/hosts.ini --limit=b175"
