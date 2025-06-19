@@ -8,10 +8,10 @@ cd ~
 git clone <REPO> ~/.dotfiles
 ```
 
-## Install all dotfiles
+## Install A Dotfile
 
-To install/copy all dotfiles execute the install.sh script:
+To install/copy a dotfiles use stow for instance nvim:
 
-```bash
-bash ~/.dotfiles/install_....sh
+```shell
+stow nvim
 ```
