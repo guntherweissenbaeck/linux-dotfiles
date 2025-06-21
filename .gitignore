@@ -1,3 +1,4 @@
 vim/.vim/view/
 vim/.vim/bundle
 vim/.vim/pack/github
+nvim/.config/nvim/lazy-lock.json
