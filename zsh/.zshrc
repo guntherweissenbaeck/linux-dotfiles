@@ -1,5 +1,5 @@
 # Load Multiple SSH Keys
-zstyle :omz:plugins:ssh-agent identities ~/.ssh/{id_ed25519,ansible.ed25519,dev.azure,swjadmin}
+zstyle :omz:plugins:ssh-agent identities ~/.ssh/{id_ed25519,ansible.ed25519,dev.azure,swjadmin,gwe.ed25519}
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/.bin:/usr/local/bin:$PATH
