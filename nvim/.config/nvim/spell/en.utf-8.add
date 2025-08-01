@@ -60,3 +60,12 @@ src
 cp
 addon
 addons
+uses/!
+LSP
+Atlassian
+Codespaces
+nvim
+treesitter
+OK
+PFILE
+SPFILE
