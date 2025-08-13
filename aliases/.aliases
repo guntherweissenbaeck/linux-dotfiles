@@ -2,7 +2,6 @@
 # CLI SHORTENERS
 # ----------------------------------------------------------------------------
 alias .="source"
-alias alix='cd ~/Documents/ansible/linux && source .venv/bin/activate'
 alias dok='cd ~/Documents'
 alias dow='cd ~/Downloads'
 alias e="exit"
@@ -56,3 +55,5 @@ alias fzf="fzf --style full --preview 'fzf-preview.sh {}' --bind 'focus:transfor
 
 # Ansible Test
 alias ab175="ansible-playbook -i inventories/devel/hosts.ini --limit=b175"
+alias alix='cd ~/Documents/ansible/linux && source .venv/bin/activate'
+alias alint='ansible-lint'
