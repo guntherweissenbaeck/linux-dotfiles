@@ -2,7 +2,7 @@
 zstyle :omz:plugins:ssh-agent identities ~/.ssh/{id_ed25519,ansible.ed25519,dev.azure,swjadmin,gwe.ed25519}
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.bin:/usr/local/bin:$PATH
+export PATH=$HOME/.bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -93,6 +93,9 @@ plugins=(
     zsh-autosuggestions
     zsh-navigation-tools
     zsh-syntax-highlighting
+    uv
+    python
+    httpie
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -157,3 +160,6 @@ fi
 source <(fzf --zsh)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+ANSIBLE_VAULT_IDENTITY_LIST=default@~/.ansible/.vault_pass
+
+. "$HOME/.local/bin/env"

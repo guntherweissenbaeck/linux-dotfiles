@@ -2,6 +2,8 @@
 # CLI SHORTENERS
 # ----------------------------------------------------------------------------
 alias .="source"
+alias bat="batcat"
+alias del='rm -fr'
 alias dok='cd ~/Documents'
 alias dow='cd ~/Downloads'
 alias e="exit"
@@ -18,7 +20,6 @@ alias t="tmux -2"
 alias tldr='tldr -p linux'
 alias v="/home/gwe/.bin/nvim"
 alias vim="/home/gwe/.bin/nvim"
-alias bat="batcat"
 
 # trash aliases
 alias tre='trash-empty'
@@ -53,7 +54,12 @@ alias fe='nvim $(fzf --style full -m --preview="batcat --color=always {}")'
 alias ff='fzf --style full --preview="batcat --color=always {}"'
 alias fzf="fzf --style full --preview 'fzf-preview.sh {}' --bind 'focus:transform-header:file --brief {}'"
 
-# Ansible Test
+# Ansible
 alias ab175="ansible-playbook -i inventories/devel/hosts.ini --limit=b175"
-alias alix='cd ~/Documents/ansible/linux && source .venv/bin/activate'
+alias ab177="ansible-playbook -i inventories/devel/hosts.ini --limit=b177"
+alias ab180="ansible-playbook -i inventories/devel/hosts.ini --limit=b180"
 alias alint='ansible-lint'
+alias alix='cd ~/Documents/ansible/linux && source .venv/bin/activate'
+alias dop='ansible-vault decrypt /home/gwe/Documents/ansible/linux/roles/odb_password_system_reset/vars/main.yml'
+alias eop='ansible-vault encrypt --encrypt-vault-id default /home/gwe/Documents/ansible/linux/roles/odb_password_system_reset/vars/main.yml'
+alias clock='tty-clock -c -s -u -b -C 3 -x'
